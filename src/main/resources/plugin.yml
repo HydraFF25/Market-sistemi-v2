@@ -1,0 +1,25 @@
+name: BworldMarket
+version: '1.0.0'
+main: com.bworld.market.BworldMarket
+api-version: '1.20'
+author: Bworld
+description: SMP sunuculari icin gelismis market/shop sistemi
+softdepend: [Vault]
+
+commands:
+  market:
+    description: Market GUI'sini acar
+    usage: /market [sellhand|sellall]
+    aliases: [bmarket]
+  bworldmarket:
+    description: BworldMarket yonetim komutlari
+    usage: /bworldmarket <reload|additem|removeitem|setbuyprice|setsellprice|list>
+    aliases: [bwm]
+
+permissions:
+  bworldmarket.use:
+    description: Marketi kullanabilme izni
+    default: true
+  bworldmarket.admin:
+    description: Market yonetim komutlarini kullanabilme izni
+    default: op

@@ -1,0 +1,28 @@
+# =====================================
+#   BworldMarket - Genel Ayarlar
+# =====================================
+
+gui:
+  main-title: "&8&lBworld Market"
+  category-rows: 6
+
+# Dinamik fiyatlandirma: cok satin alinan urun pahalanir,
+# cok satilan urun ucuzlar. Zamanla taban fiyata geri doner.
+dynamic-pricing:
+  enabled: true
+  step-percent: 1.0
+  min-multiplier: 0.5
+  max-multiplier: 2.0
+  decay-interval-minutes: 5
+
+# Satis islemlerinden alinacak vergi (yuzde). 0 = vergi yok.
+sell-tax-percent: 0.0
+
+# /market sellall komutunda onay penceresi acilsin mi?
+confirm-sell-all: true
+
+# Islemler plugins/BworldMarket/transactions.log dosyasina yazilsin mi?
+log-transactions: true
+
+sounds:
+  enabled: true
